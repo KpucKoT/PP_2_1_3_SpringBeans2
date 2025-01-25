@@ -15,10 +15,11 @@ public class Application {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
-            Timer timer = applicationContext.getBean(Timer.class);
-            bean.whatAnimalSay();
-            timer.getTime();
         }
-    }
 
+        Timer timer = applicationContext.getBean(Timer.class);
+        System.out.println(timer.getTime());
+    }
 }
+
+
